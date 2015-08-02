@@ -1,6 +1,6 @@
 # NodeBB Audioplayer Plugin
 
-This plugin is prayed mp3 appear in a player.
+This plugin is prayed mp3, ogg, wav appear in a player.
 
 ## Installation
 
@@ -8,4 +8,12 @@ This plugin is prayed mp3 appear in a player.
 
 ## Use
 
-    This plugin is prayed mp3 appear in a player
+    This plugin is prayed mp3, ogg, wav appear in a player.
+    
+    If you have uploaded an audio file. converts the plugin the files in a HTML5 audio palyer
+
+
+
+## A&Q: 
+
+    https://community.nodebb.org/topic/6162/nodebb-plugin-audioplayer
