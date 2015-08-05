@@ -33,28 +33,28 @@ This plugin is prayed mp3, ogg, wav appear in a player.
       position: fixed;
       bottom: 0px;
       height: 50px;
-     left: 0px;
-     right: 0px;
-     display: none;
-     z-index: 2000;
-}
+      left: 0px;
+      right: 0px;
+      display: none;
+      z-index: 2000;
+  }
 
-#audioplayerPlayer .fa {
+  #audioplayerPlayer .fa {
     font-size: 30px;
     padding: 11px;
     background-color: green;
     height: 100%;
     cursor: pointer;
-}
+  }
 
-#audioplayerClose {
+  #audioplayerClose {
     
     color: red;
     position: absolute;
     right: 0px;
     cursor: pointer;
     
-}
+  }
 
 
 # CUSTOM HTML
