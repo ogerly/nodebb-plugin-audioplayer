@@ -19,41 +19,36 @@ This plugin is prayed mp3, ogg, wav appear in a player.
     https://community.nodebb.org/topic/6162/nodebb-plugin-audioplayer
 
 
-
-## you need the following code in the "costum css" and enter it into the "custom html"
+##
+ you need the following code in the "costum css" and enter it into the "custom html"
 
 # CUSTOM CSS
+    .playit { cursor: pointer; }
 
-    /* Audioplayer*/
+    #audioplayerPlayer {
+       background-color: red;
+       position: fixed;
+       bottom: 0px;
+       height: 50px;
+       left: 0px;
+       right: 0px;
+       display: none;
+       z-index: 2000;
+    }
 
-   .playit { cursor: pointer; }
+    #audioplayerPlayer .fa {
+      font-size: 30px;
+      padding: 11px;
+      background-color: green;
+      height: 100%;
+      cursor: pointer;
+    }
 
-   #audioplayerPlayer {
-      background-color: red;
-      position: fixed;
-      bottom: 0px;
-      height: 50px;
-      left: 0px;
+   #audioplayerClose {
+      color: red;
+      position: absolute;
       right: 0px;
-      display: none;
-      z-index: 2000;
-  }
-
-  #audioplayerPlayer .fa {
-    font-size: 30px;
-    padding: 11px;
-    background-color: green;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  #audioplayerClose {
-    
-    color: red;
-    position: absolute;
-    right: 0px;
-    cursor: pointer;
-    
+      cursor: pointer;
   }
 
 
