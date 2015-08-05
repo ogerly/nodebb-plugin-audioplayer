@@ -1,3 +1,7 @@
 iframe.vimeo-embed {
 	border: 0;
 }
+
+div.playit{
+    backgroundcolor: red;
+}
