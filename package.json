@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-audioplayer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NodeBB Audioplayer Plugin",
   "main": "library.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ogerly/nodebb-plugin-audioplayer.git"
   },
   "nbbpm": {
-    "compatibility": "^0.7.2"
+    "compatibility": "^0.7.3"
   },
   "keywords": [
     "nodebb",
