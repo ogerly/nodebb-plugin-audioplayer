@@ -1,6 +1,7 @@
 # NodeBB Audioplayer Plugin
 
 This plugin is prayed mp3, ogg, wav appear in a player.
+Plugin for Theme: Persona, Material, Lavender, Vanilla
 
 ## Installation
 
