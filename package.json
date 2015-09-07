@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-audioplayer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "NodeBB Audioplayer Plugin for Theme: Persona, Material, Lavender, Vanilla",
   "main": "library.js",
   "scripts": {
