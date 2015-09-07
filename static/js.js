@@ -48,9 +48,28 @@
           // theme persona
           if ( $( ".clearfix" ).length ) {
  
-             var  user  = $(this).closest('.clearfix').children().html();
+             var  user  = $(this).closest('.clearfix').children().children().html();
               console.log(  "theme => persona" );
           }
+          
+          // theme lavender
+          if ( $( ".topic-profile-pic" ).length ) {
+ 
+             var  user  = $(this).closest('.col-md-12').children().children().html();
+                  user  = "<a href='/user/"+ $(user).attr("alt") +"'>" + user + "</a>";
+             
+              console.log(  "theme => lavender" );
+          }
+          
+          // theme vanilla
+          if ( $( ".avatar" ).length ) {
+ 
+             var  user  = $(this).closest('.topic-item').html();
+
+             
+              console.log(  "theme => vanilla" );
+          }
+          
           
            console.log(  "user code => " + user);
              
