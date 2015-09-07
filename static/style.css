@@ -1,25 +1,57 @@
 .playit { cursor: pointer; }
 
 #audioplayerPlayer {
-   background-color: rgba(210, 202, 202, 0.93);
+   background-color: rgba(25, 26, 27, 1);
    position: fixed;
    bottom: 0px;
-   height: 50px;
+   height: 30px;
    left: 0px;
    right: 0px;
-   display: none;
    z-index: 2000;
+   opacity: 0.9;
 }
 
-#audioplayerPlayer .fa {
-  font-size: 30px;
-  padding: 11px;
-  background-color: rgba(217, 237, 247, 0.66);
-  height: 100%;
-  cursor: pointer;
+
+audio {
+    background: rgba(25, 26, 27, 1) !important;
+    width: 49%;
+   
 }
 
-#audioplayerClose {
-     position: absolute;
-     right: 0px;
+.inline { 
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#audioplayer_user img {
+     border-radius: 0px;
+  height: 30px;
+
+}
+
+.t30w { font-size: 30px; color: #fff }
+.t20w { font-size: 20px; color: #fff }
+
+#linkToDownload {
+   margin: 7px 20px;
+} 
+
+#linkToContent {
+  margin: 8px 0px;
+  max-width: 28%;
+  overflow: auto;
+}
+
+.pointer { cursor: pointer; }
+
+.hover:hover { color: #3E8BD7; }
+
+.right {
+   position: absolute;
+   right: 10px
+}
+
+.pointer {
+   cursor: pointer;
 }

@@ -1,57 +1,48 @@
-   $('document').ready(function() {
+ $('document').ready(function() {
    
-    var html = "";
-       html += '<div id="audioplayerPlayer">';
-   
-   	    html += '<span id="audio_icon" class="fa fa-pause"></span>&nbsp;&nbsp;';
-        html += '<span id="a_titel" >fffffff</span>';
-
-   	    html += '<audio id="playdemo" src="" autoplay></audio>&nbsp;&nbsp;';
-   	     
-        html += '<div id="audioplayerClose" class="fa fa-times"></div>';
+  
+    $(document ).on("click", ".playit", function() {    
+         $(".playdemo").stop();
+         $("#audioplayerPlayer").remove();
+         var html = "";
+        html += '<div id="audioplayerPlayer">';
+           html += '<span id="audioplayer_user"></span>';
+           html += '<span><audio class="playdemo inline" src="" preload="auto" controls loop autoplay></audio></span>';     
+           html += '<a  id="linkToContent" class="pointer inline" ></a>';
+           html += '<span id="linkToDownload" class="fa fa-cloud-download pointer t20w inline hover" rel="nofollow"></span>';
+           html += '<span  class="closeAudioPlayer right fa fa-times t30w pointer hover" ></span>';
         html += '</div>';
 
-     
-     $( "body" ).append(html);
-     
-     
-    
-    $(document ).on("click", ".playit", function() {
-        $("#audioplayerPlayer").css("display","block");
-        var src = $(this).data("link");
-        var name = $(this).data("name");
+       $( "body" ).append(html);  
+      
+           
+        var src 	= $(this).data("link"),   // link from file
+            name 	= $(this).data("name"),   // name from file
+            topic = $(".topic-title").text(),  // topic title
+            user 	= $(this).parent().parent().parent().parent().children().html(),  // user Name and Link
+            URL 	= $(location).attr('href'),  // Topic Link                 
+            PHAT  = $(location).attr('pathname'); // Returns path only
+            
+            
+        $(".playdemo").attr("src", src);        
+        $("#audioplayer_user").html(user);         
+        $("#linkToContent").attr("href", URL).text(topic); 
+       // $("#linkToDownload").attr("href", src).title("Download " + name);     
         
-        $("#a_titel").text(name);
-        
-    
-       
-          $("#playdemo").attr("src", src);
-         document.getElementById('playdemo').play();
-       
-     
-   
+        $('#linkToDownload').click(function(e) {
+           e.preventDefault();  //stop the browser from following
+           window.location.href = src;
+        });
     });
   
-  $( document ).on( "click", "#audio_icon", function() {
-	 
-	   var playdemo = $("#playdemo");
-	   
-       var clas  =  $("#audio_icon").attr("class");
-     
-       if ( clas == "fa fa-pause" ) {
-           $("#audio_icon").attr("class", "fa fa-play");
-         
-           document.getElementById('playdemo').pause();
-       } else {
-           $("#audio_icon").attr("class", "fa fa-pause");
-           document.getElementById('playdemo').play();
-       }
+   
+   // close and remove audioplayer
+      $(document ).on("click", ".closeAudioPlayer", function() {    
  
-  });
-    
-   $( document ).on( "click", "#audioplayerClose", function() {
-	 
-	      $("#audioplayerPlayer").css("display","none");
-	      document.getElementById('playdemo').pause();
-  });
-  });
+         $(".playdemo").stop();
+         $("#audioplayerPlayer").remove();
+     });  
+
+  });  
+  
+  

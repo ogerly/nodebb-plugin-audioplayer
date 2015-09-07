@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-audioplayer",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "NodeBB Audioplayer Plugin",
   "main": "library.js",
   "scripts": {
@@ -26,4 +26,4 @@
     "name": "ogerly",
     "email": "landmatrosen@gmail.com"
   }
- }
+}
