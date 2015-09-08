@@ -31,10 +31,10 @@ run in Theme:
      Example: 
       <a href="/uploads/files/1441639084008-rar15-marsimoto-full-concert-hd.mp3">RaR15 - Marsimoto Full Concert HD.mp3</a>
     
-     the player continues when you visit other sites!
-     Link to user
-     link to the topic
-     Download
+     - Player continues when you visit other sites!
+     - Link to user.
+     - Link to the topic.
+     - Download file.
 
 
 
