@@ -5,7 +5,7 @@
 
 ### NodeBB version 
 
-     run in NodeBB v0.7.x - v0.8.1
+     run in NodeBB v0.7.x - v0.9.3
 
 
 ### Themen
@@ -13,9 +13,7 @@
 run in Theme: 
 
      Persona
-     Material
-     Lavender
-     Vanilla
+    
 
    
 ## Installation
