@@ -1,7 +1,7 @@
 {
   "name": "nodebb-plugin-audioplayer",
-  "version": "1.0.2",
-  "description": "NodeBB Audioplayer Plugin for Theme: Persona, Material, Lavender, Vanilla",
+  "version": "1.0.3",
+  "description": "NodeBB Audioplayer Plugin for Theme: Persona",
   "main": "library.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ogerly/nodebb-plugin-audioplayer.git"
   },
   "nbbpm": {
-    "compatibility":   "0.9.3"
+    "compatibility":   "1.0.0"
   },
   "keywords": [
     "nodebb",
